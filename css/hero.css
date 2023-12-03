@@ -5,7 +5,9 @@
     left: 0;
     width: 100%;
 }
-
+#top nav ul:last-child {
+    display: none;
+}
 #top .navbar ul li a {
     display: block;
     color: var(--color-secondary);
@@ -53,4 +55,21 @@
 #top .banner .banner__button:hover {
     background-color: var(--color-theme-dark);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #top nav ul {
+        flex-direction: column !important;
+    }
+    #top nav ul li {
+        order: -1;
+    }
+    #top nav ul:first-child {
+        display: none;
+    }
+    #top nav ul:last-child {
+        display: flex;
+        gap: 1rem;
+    }
+    /* put the two divs on the same line */
 }
