@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./css/avis.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    
+
 </head>
 <body>
 
@@ -42,7 +45,11 @@
         </nav>
         <div class="banner flex-center flex-direction-col">
             <h1 class="text-center">YOUR DREAM LUXURY APARTMENTS</h1>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <p class="text-center">
+                Bienvenue chez Prestige House, où le luxe et le confort se rencontrent. 
+                Découvrez notre sélection exclusive de propriétés exceptionnelles. 
+                Trouvez la maison de vos rêves et créez votre avenir avec nous.
+            </p>
             <button class="banner__button">Our selection</button>
         </div>
     </section>
@@ -50,7 +57,7 @@
     <!-- section des types de biens-->
     <section id="assets" class="flex-center flex-direction-col gap-2 padding-3">
         <div class="title w-full">
-            <h2 class="text-center">Nos biens</h2>
+            <h2 class="text-center">Nos type de biens</h2>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
         </div>
         <div class="grid w-full">
@@ -58,10 +65,10 @@
                 <div class="w-full-h-full-transi"></div>
                 <p>Hôtel Particulier</p>
             </div>
-            <div class="grid-item2">
+            <!-- <div class="grid-item2">
                 <div class="w-full-h-full-transi"></div>
                 <p>Studio</p>
-            </div>
+            </div> -->
             <div class="grid-item3">
                 <div class="w-full-h-full-transi"></div>
                 <p>appartement</p>
@@ -258,7 +265,7 @@
                 </div>
                 <div class="contact-right">
                     <div>
-                        <form class="flex flex-direction-col" action="" id="contact__form">
+                        <form class="flex flex-direction-col" id="contact__form">
                             <div class="form_grid">
                                 <input id="input__name" type="text" placeholder="Nom" required>
                                 <input id="input__email" type="email" placeholder="Email" required>
@@ -283,6 +290,10 @@
             <span>Terms of Use</span>
         </p>
     </footer>
+
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/contact.js" defer ></script>
 
 </body>
 </html>
