@@ -42,7 +42,9 @@
 }
 
 
-
+.flex {
+    display: flex;
+}
 
 .flex-center {
     display: flex;
