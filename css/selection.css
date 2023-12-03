@@ -75,6 +75,16 @@
 @media screen and (max-width: 768px) {
     #selection .grid {
         grid-template-columns: repeat(1, 1fr);
+        max-width: 100%;
+    }
+    #selection {
+        padding: 0.2rem;
+    }
+    #selection .grid div.grid-card {
+        height: fit-content;
+    }
+    #selection .title {
+        padding-top: 2rem;
     }
 }
 

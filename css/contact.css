@@ -123,5 +123,7 @@
     #contact .contact-container .contact-right form .form_grid {
         grid-template-columns: 1fr;
     }
-    
+    #contact div.padding-3 {
+        padding: 0.2rem;
+    }
 }

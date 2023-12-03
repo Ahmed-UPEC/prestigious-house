@@ -73,3 +73,16 @@
     }
     /* put the two divs on the same line */
 }
+
+@media screen and (max-width: 460px) {
+    #top nav ul:last-child div {
+        flex-direction: column;
+        gap: 0;
+    }
+    #top .banner h1 {
+        font-size: 2rem;
+    }
+    #top .banner p {
+        font-size: 1rem;
+    }
+}

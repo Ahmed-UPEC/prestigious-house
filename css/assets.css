@@ -133,7 +133,10 @@
 
 @media screen and (max-width: 600px) {
     #assets {
-        max-width: 95%;
-        padding: 0.5rem 1rem;
+        max-width: 100%;
+        padding: 0.2rem 1rem;
+    }
+    #assets .title {
+        padding-top: 2rem;
     }
 }
