@@ -1,0 +1,139 @@
+#assets {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+#assets div.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#assets div.title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+#assets div.title p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+#assets .grid  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 500px;
+}
+/* grid placement */
+#assets .grid .grid-item1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+#assets .grid .grid-item2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+#assets .grid .grid-item3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+#assets .grid .grid-item4 {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+/* zoom efect on each items */
+.w-full-h-full-transi {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+#assets .grid .grid-item1 div {
+    background-image: url("../assets/image/hotel.jpg");
+}
+#assets .grid .grid-item2 div {
+    background-image: url("../assets/image/studio.jpg");
+}
+#assets .grid .grid-item3 div {
+    background-image: url("../assets/image/appart.jpg");
+}
+#assets .grid .grid-item4 div {
+    background-image: url("../assets/image/maison.jpg");
+
+}
+
+#assets .grid .grid-item1, 
+#assets .grid .grid-item2, 
+#assets .grid .grid-item3, 
+#assets .grid .grid-item4 {
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#assets .grid .grid-item1 p, 
+#assets .grid .grid-item2 p, 
+#assets .grid .grid-item3 p, 
+#assets .grid .grid-item4 p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#assets .grid .grid-item1 div,
+#assets .grid .grid-item2 div,
+#assets .grid .grid-item3 div,
+#assets .grid .grid-item4 div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assets .grid .grid-item1 div:hover,
+#assets .grid .grid-item2 div:hover,
+#assets .grid .grid-item3 div:hover,
+#assets .grid .grid-item4 div:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    cursor: pointer;
+}
+
+#assets .grid .grid-item1 div p:hover,
+#assets .grid .grid-item2 div p:hover,
+#assets .grid .grid-item3 div p:hover,
+#assets .grid .grid-item4 div p:hover {
+    transform: scale(1.02); /* Reset the scale for the text */
+    z-index: 3; /* Bring the text to the front */
+}
+
+
+@media screen and (max-width: 960px) {
+    #assets .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 700px;
+    }
+    #assets .grid .grid-item1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #assets .grid .grid-item2 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #assets .grid .grid-item3 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #assets .grid .grid-item4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #assets {
+        max-width: 95%;
+        padding: 0.5rem 1rem;
+    }
+}
