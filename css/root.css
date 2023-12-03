@@ -35,8 +35,10 @@
     --color-accent-darkest-18: #000000;
     --color-accent-darkest-19: #000000;
     --color-accent-darkest-20: #000000;
-    --color-theme: rgb(153, 66, 66);
-    --color-theme-dark: rgb(117, 51, 51);
+    /* --color-theme: rgb(153, 66, 66); */
+    /* --color-theme-dark: rgb(117, 51, 51); */
+    --color-theme: #636364;
+    --color-theme-dark: #494949;
 }
 
 

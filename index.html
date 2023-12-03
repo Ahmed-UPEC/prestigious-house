@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/assets.css">
+    <link rel="stylesheet" href="./css/selection.css">
 </head>
 <body>
-    
+
     <!-- section de la barre de navigation et couverture site web -->
     <section id="top" style="height: 100vh;">
         <nav class="navbar flex-center padding-1">
@@ -19,7 +20,7 @@
                     <li><a href="#">Acceuil</a></li>
                     <li><a href="#">Biens</a></li>
                 </div>
-                <li><a href="#">LOGO</a></li>
+                <li><a href="#"><img src="assets/logo_dark.png" style="width: 150px;"/></a></li>
                 <div class="flex-center gap-2 w-full">
                     <li><a href="#">Estimation</a></li>
                     <li><a href="#">Qui sommes nous</a></li>
@@ -27,7 +28,7 @@
             </ul>
             <!-- list des liens qui s'affiche sur telephone -->
             <ul class="list-style-none flex-evenly gap-2 w-full">
-                <li><a href="#">LOGO</a></li>
+                <li><a href="#"><img src="assets/logo_dark.png" style="width: 150px;"/></a></a></li>
                 <div class="flex-center gap-2 w-full">
                     <li><a href="#">Acceuil</a></li>
                     <li><a href="#">Biens</a></li>
@@ -66,6 +67,106 @@
                 <div class="w-full-h-full-transi"></div>
                 <p>pavillon</p>
             </div>
+        </div>
+    </section>
+
+    <!-- section des biens en vente -->
+    <section id="selection" class="padding-3">
+        <div class="title w-full">
+            <h2 class="text-center">Nos biens</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+
+        <!-- element de vente - Grille -->
+        <div class="grid">
+            <!-- element de vente -->
+            <div class="grid-card">
+                <img src="./assets/image/maison_2.jpg" />
+                <div>
+                    <h3>Maison Modern</h3>
+                    <p>
+                        <img src="./assets/icons/location.png" alt="logo localisation">
+                        <span>Créteil</span>
+                    </p>
+                    <div class="grid-card-subgrid">
+                        <p>
+                            <img src="./assets/icons/surface.png" alt="logo details">
+                            surface : 98m²
+                        </p>
+                        <p>
+                            <img src="./assets/icons/bedroom.png" alt="logo details">
+                            chambre : 4
+                        </p>
+                        <p>
+                            <img src="./assets/icons/salon.png" alt="logo details">
+                            salon : 2
+                        </p>
+                        <p>
+                            <img src="./assets/icons/garage.png" alt="logo details">
+                            garage : 2
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card">
+                <img src="./assets/image/studio.jpg" />
+                <div>
+                    <h3>Studio Modern</h3>
+                    <p>
+                        <img src="./assets/icons/location.png" alt="logo localisation">
+                        <span>Créteil</span>
+                    </p>
+                    <div class="grid-card-subgrid">
+                        <p>
+                            <img src="./assets/icons/surface.png" alt="logo details">
+                            surface : 98m²
+                        </p>
+                        <p>
+                            <img src="./assets/icons/bedroom.png" alt="logo details">
+                            chambre : 4
+                        </p>
+                        <p>
+                            <img src="./assets/icons/salon.png" alt="logo details">
+                            salon : 2
+                        </p>
+                        <p>
+                            <img src="./assets/icons/garage.png" alt="logo details">
+                            garage : 0
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-card">
+                <img src="./assets/image/appart.jpg" />
+                <div>
+                    <h3>Appartement</h3>
+                    <p>
+                        <img src="./assets/icons/location.png" alt="logo localisation">
+                        <span>Paris</span>
+                    </p>
+                    <div class="grid-card-subgrid">
+                        <p>
+                            <img src="./assets/icons/surface.png" alt="logo details">
+                            surface : 76m²
+                        </p>
+                        <p>
+                            <img src="./assets/icons/bedroom.png" alt="logo details">
+                            chambre : 2
+                        </p>
+                        <p>
+                            <img src="./assets/icons/salon.png" alt="logo details">
+                            salon : 1
+                        </p>
+                        <p>
+                            <img src="./assets/icons/garage.png" alt="logo details">
+                            garage : 1
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     
