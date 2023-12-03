@@ -39,6 +39,11 @@
     text-transform: uppercase;
 }
 
+#top .banner p {
+    font-size: 1rem;
+    max-width: 60%;
+}
+
 #top .banner .banner__button {
     display: inline-block;
     padding: 1rem 2rem;
@@ -80,9 +85,10 @@
         gap: 0;
     }
     #top .banner h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #top .banner p {
+        max-width: 98%;
         font-size: 1rem;
     }
 }
