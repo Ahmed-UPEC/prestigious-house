@@ -126,4 +126,7 @@
     #contact div.padding-3 {
         padding: 0.2rem;
     }
+    #contact .title {
+        padding-top: 2rem;
+    }
 }
