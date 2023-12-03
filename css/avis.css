@@ -1,0 +1,56 @@
+#avis {
+    height: 100%;
+    background: url("../assets/image/avis.jpg") no-repeat center center/cover;
+}
+
+#avis div.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#avis div.title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+#avis div.title p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+#avis .avis_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 85%;
+    margin-top: 5rem;
+}
+
+
+#avis .avis_grid .avis_card {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 1.25rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-top: 70px;
+}
+#avis .avis_grid .avis_card > img {
+    border-radius: 50%;
+    width: 100px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#avis .avis_grid .avis_card div img {
+    width: 20px;
+    margin: 0 auto;
+}
