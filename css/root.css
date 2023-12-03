@@ -1,0 +1,86 @@
+/* root style variables */
+
+:root {
+    --color-primary: #1a1a1a;
+    --color-secondary: #f2f2f2;
+    --color-tertiary: #e6e6e6;
+    --color-accent: #ff0000;
+    --color-accent-dark: #cc0000;
+    --color-accent-light: #ff3333;
+    --color-accent-lighter: #ff6666;
+    --color-accent-lightest: #ff9999;
+    --color-accent-lightest-2: #ffcccc;
+    --color-accent-lightest-3: #ffe6e6;
+    --color-accent-lightest-4: #fff2f2;
+    --color-accent-lightest-5: #fff9f9;
+    --color-accent-lightest-6: #ffffff;
+    --color-accent-darkest: #990000;
+    --color-accent-darker: #660000;
+    --color-accent-darkest-2: #330000;
+    --color-accent-darkest-3: #000000;
+    --color-accent-darkest-4: #000000;
+    --color-accent-darkest-5: #000000;
+    --color-accent-darkest-6: #000000;
+    --color-accent-darkest-7: #000000;
+    --color-accent-darkest-8: #000000;
+    --color-accent-darkest-9: #000000;
+    --color-accent-darkest-10: #000000;
+    --color-accent-darkest-11: #000000;
+    --color-accent-darkest-12: #000000;
+    --color-accent-darkest-13: #000000;
+    --color-accent-darkest-14: #000000;
+    --color-accent-darkest-15: #000000;
+    --color-accent-darkest-16: #000000;
+    --color-accent-darkest-17: #000000;
+    --color-accent-darkest-18: #000000;
+    --color-accent-darkest-19: #000000;
+    --color-accent-darkest-20: #000000;
+    --color-theme: rgb(153, 66, 66);
+    --color-theme-dark: rgb(117, 51, 51);
+}
+
+
+
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex-direction-col {
+    flex-direction: column;
+}
+
+
+.list-style-none {
+    list-style: none;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.padding-1 {
+    padding: 1rem;
+}
+
+.padding-2 {
+    padding: 2rem;
+}
+
+.padding-3 {
+    padding: 3rem;
+}
+
+.w-full {
+    width: 100%;
+}
