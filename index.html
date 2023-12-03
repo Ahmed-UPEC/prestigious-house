@@ -23,12 +23,12 @@
         <nav class="navbar flex-center padding-1">
             <ul class="list-style-none flex-evenly gap-2 w-full">
                 <div class="flex-center gap-2 w-full">
-                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#top">Acceuil</a></li>
                     <li><a href="#">Biens</a></li>
                 </div>
                 <li><a href="#"><img src="assets/logo_dark.png" style="width: 150px;"/></a></li>
                 <div class="flex-center gap-2 w-full">
-                    <li><a href="#">Estimation</a></li>
+                    <li><a href="#contact">Estimation</a></li>
                     <li><a href="#">Qui sommes nous</a></li>
                 </div>
             </ul>
@@ -36,9 +36,9 @@
             <ul class="list-style-none flex-evenly gap-2 w-full">
                 <li><a href="#"><img src="assets/logo_dark.png" style="width: 150px;"/></a></a></li>
                 <div class="flex-center gap-2 w-full">
-                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#top">Acceuil</a></li>
                     <li><a href="#">Biens</a></li>
-                    <li><a href="#">Estimation</a></li>
+                    <li><a href="#contact">Estimation</a></li>
                     <li><a href="#">Qui sommes nous</a></li>
                 </div>
             </ul>
@@ -303,9 +303,56 @@
         </p>
     </footer>
 
+    <!-- Add a button on the bottom right to go back up -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="./assets/icons/up.png" alt="logo arrow">
+    </button>
+
     <!-- Email JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./js/contact.js" defer ></script>
+
+    <!-- script pour le bouton de retour en haut de page -->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "flex";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <style>
+        #myBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 20px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: transparent; /* Set a background color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            background-color: rgba(226, 225, 225, 1);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+        #myBtn img {
+            width: 20px;
+        }
+    </style>
+
 
 </body>
 </html>
