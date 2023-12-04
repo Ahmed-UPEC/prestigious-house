@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/biens.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     
@@ -44,6 +46,67 @@
             <button class="banner__button">Our selection</button>
         </div>
     </section>
+
+    <section id="nos-biens" class="padding-3">
+        <div class="title w-full">
+            <h2 class="text-center">Nos biens</h2>
+            <p class="text-center">
+                Plongez dans la perfection avec nos biens en vente, 
+                tels que la magnifique Maison Modern à Créteil.
+            </p>
+        </div>
+
+        <div class="no_biens_grid">
+            <div class="item">
+                <img src="./assets/image/maison_2.jpg"  onclick="openModal(this)" alt="cover">
+                <div class="content">
+                    <h3>Maison Moderne</h3>
+                    <p>
+                        Appartement type 2 pièces de 40.77m² situé au 3eme et dernier étage 
+                        d'un bel immeuble ancien sur cour. Il se compose d'une entrée, un séjour, 
+                        une cuisine...
+                    </p>
+                    <p>1 500 000 €</p>
+                </div>
+                <!-- Add modal structure for this item -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal(this)">&times;</span>
+                        <p>This is your modal content for Maison Moderne.</p>
+                        <!-- Add more content here as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+     <!-- section footer -->
+     <footer style="margin-top: -10px;">
+        <p>
+            <span>© 2024 Prestige House - Redéfinir l'excellence immobilière.</span>
+        </p>
+    </footer>
+
+    <script>
+        // Add this JavaScript after your existing code
+        function openModal(element) {
+            console.log(element);
+            const modal = element.closest('.item').querySelector('.modal');
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(element) {
+            console.log(element);
+            const modal = element.closest('.modal');
+            console.log(modal);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Disable scrolling
+        }
+        
+    </script>
 
 </body>
 </html>
