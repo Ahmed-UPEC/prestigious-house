@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/biens.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <!-- Ajouter dans la section head -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     
@@ -57,6 +60,8 @@
         </div>
 
         <div class="no_biens_grid">
+
+
             <div class="item">
                 <img src="./assets/image/maison_2.jpg"  onclick="openModal(this)" alt="cover">
                 <div class="content">
@@ -72,16 +77,66 @@
                 <div class="modal">
                     <div class="modal-content">
                         <span class="close" onclick="closeModal(this)">&times;</span>
-                        <p>This is your modal content for Maison Moderne.</p>
-                        <!-- Add more content here as needed -->
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/image/appart.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/image/avis.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/image/maison_2.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <img src="./assets/image/studio.jpg"  onclick="openModal(this)" alt="cover">
+                <div class="content">
+                    <h3>Maison Moderne</h3>
+                    <p>
+                        Appartement type 2 pièces de 40.77m² situé au 3eme et dernier étage 
+                        d'un bel immeuble ancien sur cour. Il se compose d'une entrée, un séjour, 
+                        une cuisine...
+                    </p>
+                    <p>1 500 000 €</p>
+                </div>
+                <!-- Add modal structure for this item -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal(this)">&times;</span>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/image/studio.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/image/avis.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/image/avis.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/image/avis.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
-
-
+    
      <!-- section footer -->
      <footer style="margin-top: -10px;">
         <p>
@@ -89,24 +144,10 @@
         </p>
     </footer>
 
-    <script>
-        // Add this JavaScript after your existing code
-        function openModal(element) {
-            console.log(element);
-            const modal = element.closest('.item').querySelector('.modal');
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal(element) {
-            console.log(element);
-            const modal = element.closest('.modal');
-            console.log(modal);
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Disable scrolling
-        }
-        
-    </script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/biens.js"></script>
 
 </body>
 </html>
