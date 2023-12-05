@@ -50,6 +50,8 @@
 
 #contact .contact-container .contact-left p img {
     width: 20px;
+    vertical-align: bottom;
+    margin-right: 5px;
 }
 
 #contact .contact-container .contact-left {
