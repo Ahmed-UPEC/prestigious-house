@@ -35,6 +35,10 @@
     background-image: url("../assets/image/avis.jpg") !important;
     background-position: center 0% !important;
 }
+.customBG2{
+    background-image: url("../assets/image/aboutus.jpeg") !important;
+    background-position: center 20% !important;
+}
 
 #top .banner h1 {
     font-size: 3rem;
